@@ -15,19 +15,16 @@ const exerciseSchema = new Schema(
     reps: {
       type: Number,
       min: 0,
-      // required: true,
       default: 0,
     },
     sets: {
       type: Number,
       min: 0,
-      // required: true,
       default: 0,
     },
     duration: {
       type: Number,
       min: 0,
-      // required: true,
       default: 0,
     },
   },
