@@ -9,14 +9,14 @@ app.use(cors());
 app.use(express.json());
 
 const uri = keys.ATLAS_URI;
-mongoose.connect(uri, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useCreateIndex: true,
-});
-mongoose.connection.once("open", () => {
-  console.log("Connected to database...");
-});
+mongoose
+  .connect(uri, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+  })
+  .then(() => console.log("MongoDB Connected..."))
+  .catch((err) => console.log(err));
 
 require("./routes/exerciseRoutes")(app);
 
