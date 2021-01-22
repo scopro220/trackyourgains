@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;900&display=swap");
+
+:root {
+  --primary-color: #4b4b4b;
+  --secondary-color: #446cb3;
+  --light-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Exo 2", sans-serif;
+}
+
+.header-title {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--light-color);
+  background-color: var(--primary-color);
+  text-shadow: 1.5px 1.5px var(--secondary-color);
+  padding: 15px;
+  letter-spacing: 0.25rem;
+}
+
+.filter-bar {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin: 10px auto 0;
+}
+
+.filter-bar button {
+  font-size: 1.75rem;
+  color: var(--secondary-color);
+  text-shadow: 1px 1px var(--primary-color);
+  border: none;
+  background-color: var(--light-color);
+}
+
+.filter-bar button:hover {
+  cursor: pointer;
+}
+
+.filter-bar button:focus {
+  outline: none;
+}
+
+.dashboard-wrapper {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.exercise-form {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 60px;
+  height: 475px;
+  width: 300px;
+  box-shadow: 3px 3px 10px var(--primary-color);
+  border-radius: 8px;
+}
+
+.exercise-form input,
+.exercise-form select {
+  margin: 15px auto;
+  font-size: 1rem;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid var(--primary-color);
+  width: 80%;
+}
+
+.exercise-form input::-webkit-outer-spin-button,
+.exercise-form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.exercise-form input:focus,
+.exercise-form select:focus {
+  outline: none;
+}
+
+.register-form,
+.login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 135px auto 0;
+  height: 450px;
+  width: 350px;
+  box-shadow: 0.75px 0.75px 4px var(--primary-color);
+  background-color: var(--light-color);
+  border-radius: 8px;
+}
+
+.register-form input,
+.login-form input {
+  margin: 15px auto;
+  font-size: 1.5rem;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid var(--primary-color);
+  width: 80%;
+}
+
+.register-form input:first-child,
+.login-form input:first-child {
+  margin-top: 30px;
+}
+
+.register-form input[type="submit"],
+.exercise-form input[type="submit"],
+.login-form input[type="submit"] {
+  width: 50%;
+  cursor: pointer;
+  color: var(--light-color);
+  background-color: var(--primary-color);
+  text-shadow: 1.5px 1.5px var(--secondary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  border-radius: 8px;
+  width: 80%;
+}
+
+.register-form p,
+.login-form p {
+  margin: 0 auto;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.register-form p > a:visited,
+.login-form p > a:visited {
+  color: black;
+}
+
+.exercise-list {
+  min-width: 750px;
+  height: 525px;
+  margin: 0 60px;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.exercise-list::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px var(--primary-color);
+  -webkit-box-shadow: inset 0 0 6px var(--primary-color);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+.exercise-list::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+.exercise-list::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px var(--primary-color);
+  -webkit-box-shadow: inset 0 0 6px var(--primary-color);
+  background-color: var(--primary-color);
+}
+
+.exercise-list-item {
+  list-style: none;
+  margin: 20px 0;
+  box-shadow: 3px 3px 10px var(--primary-color);
+  border-radius: 8px;
+}
+
+.exercise-list-item {
+  margin-top: 0;
+}
+
+.top-row,
+.bottom-row {
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+}
+
+.top-row p,
+.bottom-row p {
+  width: 33%;
+}
+
+.group {
+  color: var(--secondary-color);
+  text-shadow: 1px 1px var(--primary-color);
+  font-size: 1.1rem;
+}
+
+.item-date {
+  text-align: center;
+}
+
+.trash {
+  color: #ff0000;
+  text-align: right;
+}
+
+.trash svg {
+  font-size: 1.25rem;
+  margin: 0 10px 10px 0;
+}
+
+.trash svg:hover {
+  cursor: pointer;
+}
+
+.landing-page::before {
+  content: "";
+  background-image: url("./images/image-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.25;
+  z-index: -1;
+  position: absolute;
+}
+
+.login::before {
+  content: "";
+  background-image: url("./images/image-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.45;
+  z-index: -1;
+  position: absolute;
+}
+
+.register::before {
+  content: "";
+  background-image: url("./images/image-3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.35;
+  z-index: -1;
+  position: absolute;
+}
+
+.landing-page p {
+  font-size: 2rem;
+  padding: 25px;
+}
+
+.landing-page > p:nth-child(1),
+.landing-page > p:nth-child(2),
+.landing-page > p:nth-child(3),
+.landing-page > p:nth-child(4) {
+  margin-left: 10rem;
+}
+.landing-page > p:nth-child(1) {
+  margin-top: 3rem;
+}
+
+.landing-page > p:nth-child(2) {
+  padding-left: 3.5rem;
+}
+
+.landing-page > p:nth-child(3) {
+  padding-left: 5.75rem;
+}
+
+.landing-page > p:nth-child(4) {
+  padding-left: 8.5rem;
+}
+
+.landing-page-login,
+.landing-page-register {
+  text-decoration: none;
+}
+
+.landing-page-login:hover,
+.landing-page-register:hover {
+  text-decoration: underline;
+}
+
+.company-name,
+.landing-page-login,
+.landing-page-register {
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--light-color);
+  text-shadow: 1.5px 1.5px var(--secondary-color);
+  padding: 15px;
+  letter-spacing: 0.25rem;
+  font-weight: 700;
+}
+
+.quote-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 100px;
+}
+
+.quote-wrapper .quote {
+  font-size: 1.4rem;
+  margin-top: 65px;
+  height: 150px;
+  width: 250px;
+  color: var(--primary-color);
+  text-shadow: 1px 1px var(--secondary-color);
+}
+
+.quote-wrapper .quote:nth-child(odd) {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.quote-wrapper .quote:nth-child(even) {
+  padding-top: 45px;
+}
