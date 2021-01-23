@@ -8,7 +8,7 @@ const Register = () => {
         <input type="text" name="" id="" placeholder="Enter Name" />
         <input type="email" name="" id="" placeholder="Enter Email" />
         <input type="password" name="" id="" placeholder="Enter Password" />
-        <input type="submit" value="Register" />
+        <Link to="/dashboard">Register</Link>
         <p>
           Already a member? <Link to="/login">Login</Link>
         </p>
