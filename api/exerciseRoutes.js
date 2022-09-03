@@ -1,4 +1,4 @@
-let Exercise = require("../models/Exercise");
+let Exercise = require("./Exercise");
 
 module.exports = (app) => {
   app.get("/api/exercise", async (req, res) => {
