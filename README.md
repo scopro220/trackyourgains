@@ -1,4 +1,3 @@
-
 # Track Your Gains
 
 ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
@@ -11,18 +10,21 @@
 
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=flat&logo=mongodb&logoColor=white)
 
-Website: [Track Your Gains](https://track-your-gains.herokuapp.com/)
+Website: [Track Your Gains](https://trackyourgains.vercel.app/)
 
-Hosted on [Heroku](https://www.heroku.com/)
+Hosted on [Vercel](https://www.vercel.com/)
+
 ## Environment Variables
 
 To run this project, you will need to add the following environment variables to your .env.local file
 
 `ATLAS_URI` -> [MongoDB Atlas URI](https://www.mongodb.com/atlas/database)
+
 ## Features
 
 - Add workouts
 - Filter workouts by body part
+
 ## NPM Packages
 
 - [react](https://reactjs.org/)
@@ -30,6 +32,7 @@ To run this project, you will need to add the following environment variables to
 - [node](https://nodejs.org/en/)
 - [express](https://expressjs.com/)
 - [mongoose](https://mongoosejs.com/)
+
 ## Screenshots
 
 Landing Page
@@ -47,4 +50,3 @@ Dashboard Page
 ## Author
 
 - [Scott Provence](https://www.github.com/scopro220)
-
